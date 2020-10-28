@@ -286,7 +286,7 @@ padding: 57px 0px;
 }
 
 .bottom{
-	min-height: 483px;
+	height: 483px;
 	/*background: url("img/bottom.png") left no-repeat;*/
 	display: flex;
 	justify-content: space-between;
@@ -312,6 +312,7 @@ color: #4F4F4F;
 	max-width: 535px;
 	padding-right: 3%;
 	padding-top: 105px;
+
 }
 .bottom-container p{
 	padding-top: 35px;
@@ -353,6 +354,86 @@ font-weight: bold;
 font-size: 16px;
 line-height: 21px;
 color: #FFFFFF;
+}
+
+/*+++++++++++++++++++++++++++++*/
+.ellips{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+
+.atom{
+	position: absolute;
+	bottom: 135px;
+	left: 40px;
+}
+
+.mobi{
+	position: absolute;	
+	left: 17%;
+	top: 2%;
+
+}
+
+.click{
+	position: absolute;
+	bottom: 158px;
+	left: 370px;
+	z-index: 2;
+}
+
+.circleblue{
+	position: absolute;
+	top: 95px;
+	left: 176px;
+	z-index: 5;
+}
+
+.nseven{
+	position: absolute;
+	top: 97px;
+	left: 183px;
+	z-index: 10;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15.0621px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	text-align: right;
+	color: #FFFFFF;
+}
+
+.starti{
+	position: relative;
+	margin-top: 54px;
+}
+
+.circlebig{
+	position: absolute;
+	top: 65px;
+	left: 110px;
+	z-index: 2;
+}
+
+.starti:before{
+	content: url("img/bell.png");
+	position: absolute;
+	top: 100px;
+	left: 153px;
+	z-index: 3;
+}
+.starti:after{
+	content: url("img/clicki.svg");
+	position: absolute;
+	bottom: 195px;
+	left: 409px;
+	z-index: 3;
+}
+
+.sevengreen, .ngseven{
+	visibility: hidden;
 }
 
 /*-------------------------------*/
@@ -502,6 +583,7 @@ color: #FFFFFF;
   		display: flex;
   		flex-direction: column-reverse;
   		justify-content: space-between;
+  		height: 790px;
   	}
   	.bottom-container{
 		max-width: 320px;
@@ -509,6 +591,10 @@ color: #FFFFFF;
 		position: static;
 		text-align: center;
 		padding-bottom: 40px;
+	}
+
+	.bottom-img{
+		height: 261px;
 	}
 
 	footer{
@@ -529,5 +615,79 @@ color: #FFFFFF;
 	.footer-i{
 		width: 30%;
 	}
-}	
+
+	/*0000000000000000000000*/
+	.mobi{
+		left: 30px;
+		top: 20px;
+
+	}
+
+	.atom{
+		display: none;
+	}
+
+	.ellips{
+		position: absolute;
+		top: 100px;
+		left: 20px;
+	}
+
+	.circlebig{
+		top: 35px;
+		left: 45px;
+		z-index: 2;
+	}
+
+	.starti:before{
+		position: absolute;
+		top: 55px;
+		left: 72px;
+		z-index: 3;
+	}
+
+	.circleblue{
+		
+		top: 53px;
+		left: 95px;
+		z-index: 5;
+	}
+
+	.nseven{
+		top: 55px;
+		left: 100px;
+	
+	}
+
+	.starti:after{
+		content: url("img/mobile/vector.png");
+		bottom: 75px;
+		left: 276px;
+	}
+
+	.click{
+		bottom: 45px;
+		left: 240px;
+	}
+
+	.sevengreen, .ngseven{
+		visibility: visible;
+		position: absolute;
+		left: 295px;
+		bottom: 95px;
+		z-index: 100;
+	}
+}	.ngseven{
+		padding-left: 5px;
+		padding-top: 3px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 15.0621px;
+		line-height: 18px;
+		display: flex;
+		align-items: center;
+		text-align: right;
+		color: #FFFFFF;
+}
+
 
