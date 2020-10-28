@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>RWD</title>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -37,15 +37,41 @@
 	<main>
 		<article class="football-exp">
 			<div class="match-foto">
+				
 				<picture>
  				<source media="(max-width:720px)" srcset="img/mobile/match.png">
 				<img src="img/match.png" alt="match">
 				</picture>
 
-				<picture id="upfoto">
- 				<source media="(max-width:720px)" srcset="img/mobile/match-notif.png">
-				<img src="img/match-notif.png" alt="match foto">
-				</picture>
+				<div class="friend-match">
+					<div class="white-box"> 
+						<div class="white-box__text">
+							<p class="white-box__p1">Sat, 12:35pm</p>
+							<p class="white-box__p2">Arsenal v Chelsea</p>
+							<p class="white-box__p3">Friendly Match</p>
+						</div>
+						<div class="white-box__fotos">
+							<picture>
+				 				<source media="(max-width:720px)" srcset="img/mobile/arsenal.png">
+								<img src="img/arsenal.png" alt="match logo" class="arsenal">
+							</picture>
+
+							<picture>
+				 				<source media="(max-width:720px)" srcset="img/mobile/chelsea.png">
+								<img src="img/chelsea.png" alt="match logo" class="chelsea">
+							</picture>
+						</div>	
+					</div>
+					<div class="match-notification">
+						<p>Turn on all match notifications</p>
+						<div class="match-notification-bot_box">
+				            <label class="switch">
+				                <input type="checkbox">
+				                <span class="slider round"></span>
+				            </label>
+				        </div>
+					</div>
+				</div>
 
 				<picture id="downfoto">
  				<source media="(max-width:720px)" srcset="img/mobile/match-video.png">
